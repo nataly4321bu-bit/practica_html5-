@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Web App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="img/html5-logo.jpg" alt="Logo HTML5">
+            <div>
+                <h1>HTML5</h1>
+                <p>Base del desarrollo web moderno</p>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#que-es">¿Qué es?</a>
+            <a href="#estructura">Estructura</a>
+            <a href="#etiquetas">Etiquetas</a>
+            <a href="#semantica">Semántica</a>
+            <a href="#formularios">Formularios</a>
+            <a href="#multimedia">Multimedia</a>
+            <a href="#conclusion">Conclusión</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-texto">
+                <span class="badge">Tema de la práctica</span>
+                <h2>Aprendiendo HTML5</h2>
+                <p>
+                    Esta página está dedicada a explicar qué es HTML5, su estructura, sus etiquetas
+                    y su importancia en el desarrollo web. El contenido será completado por el alumno.
+                </p>
+                <a href="#que-es" class="btn">Comenzar</a>
+            </div>
+            <div class="hero-imagen">
+                <!-- Aquí va la imagen principal -->
+            </div>
+        </section>
+
+        <section id="que-es" class="seccion">
+            <article class="card">
+                <h2>¿Qué es HTML5?</h2>
+                <img src="img/html5-logo.jpg" alt="Logo HTML5">
+                <p>
+                   HTML5 es un lenguaje de programación que sirve para crear páginas web y aplicaciones donde se le puede dar una estructura al contenido agregando encabezados,párrafos,imágenes,enlaces,tablas,formularios,etc
+                </p>
+            </article>
+        </section>
+
+        <section id="estructura" class="seccion">
+            <article class="card">
+                <h2>Estructura básica de HTML5</h2>
+                <img src="img/estructura.jpeg" alt="Estructura HTML5">
+                <div class="codigo">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt; Mi página&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </div>
+                <p>
+                    !DOCTYPE : Declara el tipo de documento para trabajar </p>
+                   html: Es todo el contenido de la pagina HTML  </p>
+                   head : (Titulos ,estilos,etc) estas partes no las puede ver el usuario pero son importantes para el navegador </p>
+                   body : Es todo el contenido visible de la página web con el que interactúa el usuario.
+                   
+                </p>
+            </article>
+        </section>
+
+        <section id="etiquetas" class="seccion">
+            <article class="card">
+                <h2>Etiquetas principales</h2>
+                <img src="img/etiquetas.jpeg" alt="Etiquetas HTML5">
+                <div class="grid">
+                    <div class="mini-card">
+                        <h3>h1 a h6</h3>
+                        <p> Define títulos y subtítulos en una página web pero representa una estructura jerárquica del contenido.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>p</h3>
+                        <p>Define un párrafo de texto en HTML e incluye un espacios para poder continuar un nuevo parrafo pero aparte.</p> 
+                    </div>
+                    <div class="mini-card">
+                        <h3>img</h3>
+                        <p>Se utiliza para agregar imágenes en una página web. Su atributo src (ruta de la imagen) y alt (texto alternativo descriptivo), y puede tener atributos para definir sus dimensiones.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>a</h3>
+                        <p>Crea enlaces.Uno de sus atributos es href y se usa para especificar el destino del enlace.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>button</h3>
+                        <p>Crea un botónen una página web. Su atributo type define su comportamiento: "submit" para enviar formularios, "reset" para restablecerlos, y "button" para usarlo con JavaScript. También puede tener los atributos name, value y disabled..</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>ul / ol / li</h3>
+                        <p>
+                            ul: Crea una lista desordenada, usualmente mostrada con viñetas.  <p>
+                        ol: Crea una lista ordenada, usualmente mostrada con números. Puede tener atributos para cambiar el tipo de marcador o el número de inicio.  <p>
+                          li: Define cada elemento individual dentro de una lista 
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="semantica" class="seccion">
+            <article class="card">
+                <h2>HTML5 semántico</h2>
+                <img src="img/semantico.jpeg" alt="HTML5 semántico">
+                <div class="grid">
+                    <div class="mini-card">
+                        <h3>header</h3>
+                        <p>define una sección introductoria o de navegación para un documento o sección. Puede contener encabezados, logotipos, información del autor o elementos de navegación. Es importante para la estructura semántica y la presentación del contenido inicial.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>nav</h3>
+                        <p>se utiliza para agrupar enlaces de navegación principales dentro de un sitio web. Mejora la semántica, la accesibilidad y el SEO al indicar claramente a los navegadores y tecnologías de asistencia que ese bloque contiene enlaces para la navegación del sitio.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>main</h3>
+                        <p>Marca el contenido principal de la página web.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>section</h3>
+                        <p>Representa una sección temática o funcional de un documento o aplicación, que normalmente incluye un título y contenido relacionado..</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>article</h3>
+                        <p>Marca contenido independiente y autocontenido dentro de una página web.Ayuda a los navegadores, motores de búsqueda y tecnologías asistivas a entender mejor la estructura del contenido.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>footer</h3>
+                        <p>Representa el pie de un documento HTML o de una sección dentro del documento. Por lo general, los pies (de página) contienen información como el autor del documento, información de derechos de autor, enlaces a términos de uso, política de privacidad, etc.
+
+.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="formularios" class="seccion">
+            <article class="card">
+                <h2>Formularios en HTML5</h2>
+                <img src="img/formularios.jpeg" alt="Formularios HTML5">
+                <p>
+                  Los formularios en HTML son elementos interactivos que permiten a los usuarios enviar información a un servidor. Se utilizan comúnmente en aplicaciones web para recopilar datos, como registros de usuarios, encuestas, comentarios y pedidos.<p>La estructura básica de un formulario se define utilizando la etiqueta form. Dentro de esta etiqueta, se pueden incluir varios elementos que permiten a los usuarios ingresar datos. La etiqueta tiene varios atributos importantes:<p>
+                  action: Define la URL a la que se enviarán los datos del formulario.<p>
+                  method: Especifica el método HTTP a utilizar al enviar el formulario. 
+                </p>
+
+                <form class="demo-form">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ejemplo">
+
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" placeholder="ejemplo@email.com">
+
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" rows="4" placeholder="Escribe aquí..."></textarea>
+
+                    <button type="button">Enviar</button>
+                </form>
+            </article>
+        </section>
+
+        <section id="multimedia" class="seccion">
+            <article class="card">
+                <h2>Multimedia en HTML5</h2>
+                <p>
+             HTML5 permite trabajar con imágenes, audio y video de manera nativa en los navegadores modernos, eliminando la necesidad de plugins externos como Flash o Silverlight. Esto mejora el rendimiento, la seguridad y la accesibilidad de los sitios web. 
+                </p>
+                <div class="grid">
+                    <div class="mini-card">
+                        <h3>Imágenes</h3>
+                        <p>Para incluir imágenes en el contenido de una página se utilizan los atributos: <p> •src: Es obligatorio y define la ruta de la imagen que se mostrará. Puede ser una ruta relativa (dentro del proyecto) o absoluta (URL completa en línea). 
+                        <p>• alt: Proporciona un texto alternativo que describe la imagen. Es fundamental para la accesibilidad, ya que los lectores de pantalla lo utilizan para usuarios con discapacidad visual, y también ayuda al SEO. 
+                        <p> • width y height: Permiten definir el ancho y alto de la imagen en píxeles, ayudando a mantener la estructura de la página mientras se carga la imagen. 
+                        <p> • srcset: Permite configurar imágenes responsivas, ofreciendo diferentes tamaños según la resolución o densidad de píxeles del dispositivo. 
+                        <img src="img/img.png" alt="Ejemplo">
+
+                    </div>
+                    <div class="mini-card">
+                        <h3>Audio</h3>
+                        <p>Los atributos más importantes de la etiqueta son:<p>
+                        <p> • src: especifica la ruta del archivo de audio que se reproducirá. Este atributo es esencial para indicar cuál es el archivo de audio que se va a reproducir.<p>
+                        <p> • controls: muestra los controles de reproducción del reproductor de audio. Este atributo es importante para permitir al usuario controlar la reproducción del audio.
+                        <p>• autoplay: hace que el audio se reproduzca automáticamente al cargar la página. Este atributo es importante para dar una experiencia más fluida al usuario.
+                        <p> • loop: hace que el audio se repita automáticamente una vez que termina. Este atributo es importante para permitir al usuario escuchar el audio de forma continua.
+                        <img src="img/img2.png" alt="Ejemplo">
+
+                    </div>
+                    <div class="mini-card">
+                        <h3>Video</h3>
+                        <p>Los atributos comunes de la etiqueta en son:
+                        <p> • src: especifica la ruta de la fuente del video
+                        <p> • width y height: especifica el tamaño del video
+                        <p> • controls: define si se deben mostrar los controles del video
+                        <p> • autoplay: define si el video debe reproducirse automáticamente
+                        <p> •loop: define si el video debe reproducirse en bucle
+                        <p> •muted: define si el video debe iniciar sin sonido
+                        <p> •poster: especifica una imagen que se mostrará antes de reproducir el video
+                        <p> •preload: especifica cómo se deben cargar los datos del video
+                        <p> •playsinline: define si el video se reproducirá dentro del contenido o en una ventana emergente
+                        <p> • type: especifica el tipo de formato del video
+                        <img src="img/img3.png" alt="Ejemplo">
+                    </div>
+                    <div class="mini-card">
+                        <h3>Accesibilidad</h3>
+                        <p>El atributo alt proporciona un texto alternativo para las imágenes en caso de que no puedan visualizarse. Es esencial para mejorar la accesibilidad y el SEO de una página web.
+                        <img src="img/alt.png" alt="Ejemplo">
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="conclusion" class="seccion">
+            <article class="card">
+                <h2>Conclusión</h2>
+                <p>
+                   HTML5 es importante porque mejora la estructura del sitio con etiquetas semánticas, facilita la multimedia y la accesibilidad, y añade funciones modernas (como canvas y nuevos formularios) que hacen el desarrollo web más completo.
+
+
+                </p>
+                <p><strong>Alumno:</strong> Natali Rojas Quintero</p>
+                <p><strong>Materia:</strong> Desarrollo de Aplicaciones Móviles</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Práctica HTML5 Submódulo 2</p>
+    </footer>
+
+    <script src="js/.js"></script>
+</body>
+</html>
